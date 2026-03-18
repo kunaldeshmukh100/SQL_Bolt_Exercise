@@ -4,7 +4,7 @@
   🚀 Learn SQL filtering using <b>WHERE, BETWEEN, NOT, ORDER BY, LIMIT</b>
 </p>
 
----
+--- 
 
 ## 📌 Overview
 
