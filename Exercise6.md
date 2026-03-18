@@ -60,6 +60,8 @@ FROM movies
 INNER JOIN boxoffice
 ON movies.id = boxoffice.movie_id;
 ```
+<img width="930" height="635" alt="image" src="https://github.com/user-attachments/assets/ab34e163-5c65-4c71-99fd-6cadc6e76fed" />
+
 
 ---
 
@@ -72,6 +74,8 @@ INNER JOIN boxoffice
 ON movies.id = boxoffice.movie_id
 WHERE boxoffice.international_sales > boxoffice.domestic_sales;
 ```
+<img width="927" height="631" alt="image" src="https://github.com/user-attachments/assets/a8487cef-acb1-4406-838d-1b43a517b08f" />
+
 
 ---
 
@@ -84,6 +88,8 @@ INNER JOIN boxoffice
 ON movies.id = boxoffice.movie_id
 ORDER BY boxoffice.rating DESC;
 ```
+<img width="768" height="634" alt="image" src="https://github.com/user-attachments/assets/dcf152e5-9d5d-4102-a660-8ebb1b48fe95" />
+
 
 ---
 
