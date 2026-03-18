@@ -4,7 +4,7 @@
   📊 Learn SQL aggregation using <b>MAX, AVG, SUM, GROUP BY</b>
 </p>
 
----
+--- 
 
 ## 📌 Overview
 
