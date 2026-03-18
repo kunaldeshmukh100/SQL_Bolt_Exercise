@@ -4,7 +4,7 @@
   🌎 Work with real-world data using <b>WHERE, ORDER BY, LIMIT, OFFSET</b>
 </p>
 
----
+--- 
 
 ## 📌 Overview
 
