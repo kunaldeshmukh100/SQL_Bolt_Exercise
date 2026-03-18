@@ -4,7 +4,7 @@
   📊 Master SQL using <b>DISTINCT, ORDER BY, LIMIT, OFFSET</b>
 </p>
 
----
+--- 
 
 ## 📌 Overview
 
