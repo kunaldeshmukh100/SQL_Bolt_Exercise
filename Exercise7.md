@@ -4,7 +4,7 @@
   🏢 Learn how to use <b>LEFT JOIN</b> to include missing data
 </p>
 
----
+--- 
 
 ## 📌 Overview
 
