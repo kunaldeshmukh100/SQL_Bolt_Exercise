@@ -4,7 +4,7 @@
   📊 Master SQL using <b>GROUP BY + JOIN + Aggregation</b>
 </p>
 
----
+--- 
 
 ## 📌 Overview
 
