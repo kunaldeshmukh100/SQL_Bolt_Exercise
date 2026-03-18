@@ -1,7 +1,7 @@
 # 🎯 SQL Bolt — Exercise 7 (OUTER JOINs)
 
 <p align="center">
-  🏢 Master SQL using <b>LEFT JOIN</b> to handle missing data
+  🏢 Learn how to use <b>LEFT JOIN</b> to include missing data
 </p>
 
 ---
@@ -12,10 +12,10 @@ This exercise introduces **OUTER JOINs**, specifically the `LEFT JOIN`.
 
 You will learn how to:
 
-* 🔗 Combine tables even when data is missing
+* 🔗 Combine data from multiple tables
 * 🏢 Include all records from one table
-* ⚠️ Handle `NULL` values
-* 👨‍💼 Analyze employee distribution across buildings
+* ⚠️ Handle `NULL` values (missing data)
+* 👨‍💼 Analyze employee roles per building
 
 ---
 
@@ -25,11 +25,13 @@ You will learn how to:
 SELECT column1, column2
 FROM table1
 LEFT JOIN table2
-ON table1.id = table2.id;
+ON table1.key = table2.key;
 ```
 
-💡 A `LEFT JOIN` returns **all rows from the left table**, and matching rows from the right table.
-If no match exists → result will contain **NULL values**
+💡
+
+* Keeps **all rows from the left table**
+* If no match → shows `NULL`
 
 ---
 
@@ -37,14 +39,28 @@ If no match exists → result will contain **NULL values**
 
 ### 🏢 Buildings Table
 
-* building_name
-* capacity
+| building_name | capacity |
+| ------------- | -------- |
+| 1e            | 24       |
+| 1w            | 32       |
+| 2e            | 16       |
+| 2w            | 20       |
+
+---
 
 ### 👨‍💼 Employees Table
 
-* name
-* role
-* building
+| role     | name       | building | years_employed |
+| -------- | ---------- | -------- | -------------- |
+| Engineer | Becky A.   | 1e       | 4              |
+| Engineer | Dan B.     | 1e       | 2              |
+| Engineer | Sharon F.  | 1e       | 6              |
+| Engineer | Dan M.     | 1e       | 4              |
+| Engineer | Malcom S.  | 1e       | 1              |
+| Artist   | Tylar S.   | 2w       | 2              |
+| Artist   | Sherman D. | 2w       | 8              |
+| Artist   | Jakob J.   | 2w       | 6              |
+| Artist   | Lillia A.  | 2w       | 7              |
 
 ---
 
@@ -52,29 +68,33 @@ If no match exists → result will contain **NULL values**
 
 ---
 
-## 🔹 1. Find the list of all buildings that have employees
+## 🔹 1. Find all buildings that have employees
 
 ```sql
-SELECT DISTINCT building_name
+SELECT DISTINCT building
 FROM employees;
 ```
+<img width="389" height="566" alt="image" src="https://github.com/user-attachments/assets/37aef546-26bc-497d-b11b-ae807c955276" />
 
-💡 Returns only buildings that currently have employees
+
+💡 Uses `employees.building`
 
 ---
 
-## 🔹 2. Find the list of all buildings and their capacity
+## 🔹 2. List all buildings and their capacity
 
 ```sql
 SELECT building_name, capacity
 FROM buildings;
 ```
+<img width="710" height="554" alt="image" src="https://github.com/user-attachments/assets/9ad734b5-aa98-462b-b015-da31eb4b8fe3" />
 
-💡 Includes all buildings (even empty ones)
+
+💡 Includes empty buildings too
 
 ---
 
-## 🔹 3. List all buildings and the distinct employee roles (including empty buildings)
+## 🔹 3. List all buildings and distinct employee roles (including empty buildings)
 
 ```sql
 SELECT DISTINCT buildings.building_name, employees.role
@@ -83,12 +103,14 @@ LEFT JOIN employees
 ON buildings.building_name = employees.building
 ORDER BY buildings.building_name;
 ```
+<img width="765" height="626" alt="image" src="https://github.com/user-attachments/assets/a4c20d36-5f8c-44a3-98fe-567fe76a208b" />
+
 
 💡
 
 * Keeps all buildings
-* Shows roles if present
-* Shows `NULL` for empty buildings
+* Shows roles if exist
+* Shows `NULL` if no employees
 
 ---
 
@@ -97,9 +119,10 @@ ORDER BY buildings.building_name;
 | Concept   | Description                       |
 | --------- | --------------------------------- |
 | LEFT JOIN | Includes all rows from left table |
-| DISTINCT  | Removes duplicate values          |
-| NULL      | Represents missing data           |
-| ORDER BY  | Sorts results                     |
+| DISTINCT  | Removes duplicates                |
+| NULL      | Missing value                     |
+| ON        | Join condition                    |
+| ORDER BY  | Sorting                           |
 
 ---
 
@@ -109,17 +132,17 @@ ORDER BY buildings.building_name;
 1. Open SQLBolt or any SQL tool
 2. Copy the queries
 3. Execute them
-4. Observe how missing data appears as NULL
+4. Observe NULL values for empty buildings
 ```
 
 ---
 
 ## 🌟 Features
 
-✨ Outer join queries
-✨ Handles missing data
+✨ Outer join practice
 ✨ Real-world scenario (empty buildings)
 ✨ Beginner-friendly explanation
+✨ Portfolio-ready SQL
 
 ---
 
