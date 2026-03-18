@@ -4,7 +4,7 @@
   📊 Learn SQL aggregation using <b>COUNT, SUM, GROUP BY</b>
 </p>
 
----
+--- 
 
 ## 📌 Overview
 
