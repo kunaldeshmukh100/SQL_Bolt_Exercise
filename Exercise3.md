@@ -4,7 +4,7 @@
   🔍 Learn SQL filtering using <b>LIKE, NOT, and text matching</b>
 </p>
 
----
+--- 
 
 ## 📌 Overview
 
