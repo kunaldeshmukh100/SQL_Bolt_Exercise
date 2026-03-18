@@ -2,7 +2,7 @@
 
 🚀 A beginner-friendly repository to master **SQL fundamentals** using hands-on exercises from SQLBolt.
 
----
+--- 
 
 ## 📌 About This Project
 
