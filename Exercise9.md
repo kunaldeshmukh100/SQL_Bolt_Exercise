@@ -4,7 +4,7 @@
   📊 Learn SQL calculations using <b>JOIN + Arithmetic + Expressions</b>
 </p>
 
----
+--- 
 
 ## 📌 Overview
 
