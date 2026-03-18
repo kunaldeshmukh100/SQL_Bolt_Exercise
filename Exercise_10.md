@@ -59,6 +59,8 @@ GROUP BY column
 SELECT MAX(years_employed)
 FROM employees;
 ```
+<img width="399" height="567" alt="image" src="https://github.com/user-attachments/assets/893d6f06-483e-4da8-ab16-7d486873ca83" />
+
 
 ---
 
@@ -69,6 +71,8 @@ SELECT role, AVG(years_employed)
 FROM employees
 GROUP BY role;
 ```
+<img width="526" height="573" alt="image" src="https://github.com/user-attachments/assets/433b8ee1-47eb-4643-bdcb-87443563e012" />
+
 
 ---
 
@@ -79,6 +83,8 @@ SELECT building, SUM(years_employed)
 FROM employees
 GROUP BY building;
 ```
+<img width="537" height="590" alt="image" src="https://github.com/user-attachments/assets/2cb607c8-b885-4f89-8c6a-6a8043c4366a" />
+
 
 ---
 
