@@ -4,7 +4,7 @@
   ⚠️ Learn how to work with <b>NULL values</b> in SQL using <b>IS NULL</b> and <b>LEFT JOIN</b>
 </p>
 
----
+--- 
 
 ## 📌 Overview
 
