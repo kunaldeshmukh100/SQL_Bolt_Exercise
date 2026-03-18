@@ -4,7 +4,7 @@
   🔗 Learn how to combine tables using <b>INNER JOIN</b>
 </p>
 
----
+--- 
 
 ## 📌 Overview
 
